@@ -176,7 +176,7 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/conference.jpg");
+  background-image: url("../img/elearning.gif");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -197,7 +197,7 @@ header.masthead .intro-text .intro-lead-in {
   line-height: 22px;
   margin-bottom: 25px;
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #000;
+  color: black;
 }
 
 
@@ -207,7 +207,7 @@ header.masthead .intro-text .intro-heading {
   line-height: 50px;
   margin-bottom: 25px;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #000;
+  color:black;
 }
 
 @media (min-width: 768px) {
