@@ -116,7 +116,7 @@ window.onload = function() {
   
     for (const speaker of speakers) {
       txtSpeakers += `
-      <div class="col-sm-4">
+      <div class="col-sm-3">
         <div class="team-member">      
           <img id="${speaker.idSpeaker}" class="mx-auto rounded-circle viewSpeaker" src="${speaker.foto}" alt="">
           <h4>${speaker.nome}</h4>

@@ -176,7 +176,7 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/elearning.gif");
+  background-image: url("../img/empresa.gif");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -358,3 +358,4 @@ ul.social-buttons li a {
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #3677b1;
 }
+

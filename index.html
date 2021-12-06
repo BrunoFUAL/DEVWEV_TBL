@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-
+    <link rel="icon" href="/views/img/tbl4.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Site de uma Conferência Web">
@@ -24,6 +24,7 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     
     <style>
         #googleMap {
@@ -41,7 +42,8 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand " href="#page-top">TBL - Virtual Classroom</a>
+        <img src="/views/img/tbl4.png" alt="Dev Web">
+        <a class="navbar-brand " href="#page-top"><strong>TBL - Virtual Classroom</strong></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>          
         </button>
@@ -67,6 +69,11 @@
             <li class="nav-item">
               <a id="btnLogin" class="nav-link" href="#">DOCENTES</a>
             </li>
+          <li>
+            <button>
+              <a href="/views/html/indexeng.html" class="button">ENG</a>
+            </button>
+          </li>
           </ul>
         </div>
       </div>
@@ -104,47 +111,52 @@
           <div class="row">
             <div class="col-lg-12 text-center">
               <h2 class="section-heading text-uppercase">Disciplinas</h2>
-              <h3 class="section-subheading text-muted">Especialistas internacionais do mundo da Web.</h3>
+              <h3 class="section-subheading text-muted">Estão disponiveis materiais de estudo para as seguintes unidades curriculares:.</h3>
             </div>
             <div class="row text-center">
-              <div class="col-md-6">
+              <div class="col-md-3">
                 <span class="fa-stack fa-4x">
                   <i class="fas fa-circle fa-stack-2x text-primary"></i>
                   <i class="fas fa-globe fa-stack-1x fa-inverse"></i>
                 </span>
                 <h4 class="topic-heading">Desenvolvimento WEB</h4>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDEVWEB">DEV WEB</button>
                 <p class="text-muted">Expandir a Web para fora do computador e ligá-la à Internet das Coisas!</p>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-3">
                 <span class="fa-stack fa-4x">
                   <i class="fa fa-circle fa-stack-2x text-primary"></i>
                   <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
                 </span>
                 <h4 class="topic-heading">Inteligência Artificial</h4>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">IA</button>
                 <p class="text-muted">Adaptar as aplicações Web a múltiplos dispositivos e torná-las mais responsivas em termos de performance!</p>
               </div>      
-              <div class="col-md-6">
+              <div class="col-md-3">
                 <span class="fa-stack fa-4x">
                   <i class="fa fa-circle fa-stack-2x text-primary"></i>
                   <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
                 </span>
                 <h4 class="topic-heading">Gestão de Projetos</h4>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">GP</button>
                 <p class="text-muted">Adaptar as aplicações Web a múltiplos dispositivos e torná-las mais responsivas em termos de performance!</p>
               </div> 
-              <div class="col-md-6">
+              <div class="col-md-3">
                 <span class="fa-stack fa-4x">
                   <i class="fa fa-circle fa-stack-2x text-primary"></i>
                   <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
                 </span>
                 <h4 class="topic-heading">Controlo de Gestão</h4>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">CG</button>
                 <p class="text-muted">Adaptar as aplicações Web a múltiplos dispositivos e torná-las mais responsivas em termos de performance!</p>
               </div> 
-              <div class="col-md-6">
+              <div class="col-md-3">
                 <span class="fa-stack fa-4x">
                   <i class="fa fa-circle fa-stack-2x text-primary"></i>
                   <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
                 </span>
                 <h4 class="topic-heading">Gestão de Redes e Sistemas</h4>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">GRS</button>
                 <p class="text-muted">Adaptar as aplicações Web a múltiplos dispositivos e torná-las mais responsivas em termos de performance!</p>
               </div>     
           </div>
@@ -155,7 +167,117 @@
       </section>
   
 
-    
+
+
+<div class="modal" id="modalDEVWEB">
+	<div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-header">
+          <h4 class="modal-title">Desenvolvimento WEB</h4>    
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        </div><div class="container"></div>
+        <div class="modal-body">
+          <img src="/views/img/DEVWEB.png" alt="Dev Web">
+          <object data="/views/docs/debweb.txt" width="800" height="400">
+            Not supported
+            </object
+            width="95%"></iframe></p>
+          <a data-toggle="modal" href="#modalDEVWEBl2" class="btn btn-primary" data-dismiss="modal">Aula nº1</a>
+          <a data-toggle="modal" href="#modalDEVWEBl3" class="btn btn-primary" data-dismiss="modal">Aula nº2</a>
+          <a data-toggle="modal" href="#modalDEVWEBl4" class="btn btn-primary" data-dismiss="modal">Trabalho de Grupo</a>
+          <a data-toggle="modal" href="#modalDEVWEBl5" class="btn btn-primary" data-dismiss="modal">Links Uteis</a>
+        </div>
+        <div class="modal-footer">
+          <a href="#" data-dismiss="modal" class="btn">Fechar</a>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="modal" id="modalDEVWEBl2" data-backdrop="static">
+	<div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Aula nº 1 - HTML</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        </div><div class="container"></div>
+        <div class="modal-body">
+          <embed src="/views/docs/html_tutorial.pdf" frameborder="0" width="100%" height="400px">
+        </div>
+        <div class="modal-footer">
+          <a href="#" data-dismiss="modal" class="btn">Fechar</a>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="modal" id="modalDEVWEBl3" data-backdrop="static">
+	<div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Aula nº 2 - Javascript</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        </div><div class="container"></div>
+        <div class="modal-body">
+          <embed src="/views/docs/javascript_tutorial.pdf" frameborder="0" width="100%" height="400px">
+        </div>
+        <div class="modal-footer">
+          <a href="#" data-dismiss="modal" class="btn">Fechar</a>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="modal" id="modalDEVWEBl4" data-backdrop="static">
+	<div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Trabalho de Grupo</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        </div><div class="container"></div>
+        <div class="modal-body">
+          <embed src="/views/docs/trabalhodevweb.pdf" frameborder="0" width="100%" height="400px">
+        </div>
+        <div class="modal-footer">
+          <a href="#" data-dismiss="modal" class="btn">Fechar</a>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="modal" id="modalDEVWEBl5" data-backdrop="static">
+	<div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Links Uteis</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        </div><div class="container"></div>
+        <div class="modal-body">
+          <img src="/views/img/linksuteis.png" alt="Dev Web">
+          <br>
+          <br>
+          Apresentamos alguns links uteis para consulta que servem de complemento
+          ao material disponibilizado nas aulas:
+          <br>
+          <br>
+          <li>
+            Developer Mozilla
+            <a href="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web">
+              <img src="/views/img/mdn.jpg" alt="Logotipo mozilla que liga a página inicial do mozilla">
+            </a>   
+          </li>
+          <li>
+            Dev Media
+            <a href="https://www.devmedia.com.br/javascript-tutorial/37257">
+              <img src="/views/img/devmedia.jpg" alt="Logotipo mozilla que liga a página inicial do mozilla">
+            </a>   
+          </li>
+
+        </div>
+        <div class="modal-footer">
+          <a href="#" data-dismiss="modal" class="btn">Fechar</a>
+        </div>
+      </div>
+    </div>
+</div>
+
 
     <!-- ###################### SPONSORS ########################## -->
     <section id="sponsors" class="py-5">
@@ -221,7 +343,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <span class="copyright">Copyright &copy; TBL - Virtual Classroom 2021</span>
+            <span class="copyright">Copyright &copy; TBL - Virtual Classroom</span>
           </div>
           <div class="col-md-6">
             <ul class="list-inline social-buttons">
@@ -287,7 +409,7 @@
     
     <!-- Custom scripts for this template -->
     <script src="/views/javascript/webconf.js"></script>
-    
+
 
   </body>
 
